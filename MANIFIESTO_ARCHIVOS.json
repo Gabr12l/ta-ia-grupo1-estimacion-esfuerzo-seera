@@ -1,0 +1,196 @@
+{
+  "ejecucion_del_informe": "ejecucion_20261110T001702732455Z",
+  "alcance": "Apartado experimental del Grupo 1",
+  "archivos": [
+    {
+      "ruta": ".gitignore",
+      "bytes": 46,
+      "sha256": "f841d3ac30d9668f350e9b004e8027b327cf51efabaca1b9658231247c0cff0f"
+    },
+    {
+      "ruta": "Grupo1-TA-Experimentos.ipynb",
+      "bytes": 329890,
+      "sha256": "cd24358994d03e42d0d2973eb6bc73a156517c0e0673cec8f40e2f3193d15386"
+    },
+    {
+      "ruta": "README.md",
+      "bytes": 6484,
+      "sha256": "932e0a0830f0d3f59f18b682f5c2e12d533ccd4795caa4fea5b6e5742b5847f6"
+    },
+    {
+      "ruta": "data/docs/ReadMe.pdf",
+      "bytes": 215677,
+      "sha256": "f203186a93044247036c8a285f9140e7dc339e9e87aa494e6972cd0d626bd7ae"
+    },
+    {
+      "ruta": "data/docs/SEERA dataset (sub)attribute codes.pdf",
+      "bytes": 413697,
+      "sha256": "93e1f86c282f9ed1a87933566dcde42db90c38c05ccaff0e073852ed0f15e493"
+    },
+    {
+      "ruta": "data/docs/SEERA dataset attribute formulas.pdf",
+      "bytes": 961326,
+      "sha256": "da9137c92019549868f86f30f38848e8094922bb8cbe8e1cc935b9ae29488794"
+    },
+    {
+      "ruta": "data/raw/SEERA cost estimation dataset.xlsx",
+      "bytes": 53747,
+      "sha256": "e4d22e7e8f9f7e2452f8e97500082e3c1ec7c7c087a7ad70a191c3c5fe79f225"
+    },
+    {
+      "ruta": "data/reference/metricas_originales_3_entradas.csv",
+      "bytes": 643,
+      "sha256": "eb1137f4c4988587df7ae2770bebf9f7e9d3f5f6e6599a5708b57eb71af5b9b1"
+    },
+    {
+      "ruta": "docs/EXPERIMENTO.md",
+      "bytes": 3025,
+      "sha256": "997e5022fe9974b5395dd86b2dc65ba7cd699ac4c2f1941c1ee33c76a52d6cea"
+    },
+    {
+      "ruta": "outputs/EJECUCION_DEL_INFORME.txt",
+      "bytes": 32,
+      "sha256": "2aef7d5cd447e3cf875131c81dc332cab4ccf50ecbde44b295c908b018e1170b"
+    },
+    {
+      "ruta": "outputs/ULTIMA_EJECUCION.txt",
+      "bytes": 32,
+      "sha256": "2aef7d5cd447e3cf875131c81dc332cab4ccf50ecbde44b295c908b018e1170b"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/auditoria.json",
+      "bytes": 922,
+      "sha256": "d81b481d34691bc253b0ca43729436dd66d71aebbda798587c13fe6748801efc"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/auditoria_entradas.csv",
+      "bytes": 299,
+      "sha256": "61787eb8c785244e392ae4521d7d77de40d3f9c9f354d94b718e4ddde979fe5e"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/comparacion_MAE.png",
+      "bytes": 95395,
+      "sha256": "a6237da969a81312d72672d5c3393952d13f6d67b4e9c5349414a4e7dc933330"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/comparacion_ampliacion.csv",
+      "bytes": 464,
+      "sha256": "9603bcd8b3916ff7e6d2dda518e3473383548f4bb6a75a24c1e048ccf060de10"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/configuracion_ejecucion.json",
+      "bytes": 2810,
+      "sha256": "344f9440e70776eae13f549887fd4c2f788da04d349d4ca8d9b33c0f06d65ea8"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/configuraciones.json",
+      "bytes": 116569,
+      "sha256": "2375fc2f1128c3e68d87b3baae96e9933cb58e7ee207705c2b18f2e929b3208f"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/descripcion_datos.png",
+      "bytes": 83966,
+      "sha256": "92ec14c3261b80321b881fae08dfe302690722fe45012f9ebacbf361be0d9774"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/ejemplo_consulta.json",
+      "bytes": 448,
+      "sha256": "0453640f3e4df29527c97e8edfec5b2ce1da0bcc5586818ba7aa9dd90978245b"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/errores_pareados_lineal7_B1.csv",
+      "bytes": 9171,
+      "sha256": "67e073c89030ea11a13621cdeedaff3006248f50a4feef307930f0b1b7bc29e9"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/figura_MAE_principal.png",
+      "bytes": 49563,
+      "sha256": "ffb7147d5300f2e2fe9e1b85ceb12ed8e27370c138392907dcb5eeba1b6903c6"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/figura_protocolo.png",
+      "bytes": 109954,
+      "sha256": "45051d44fcdee7469a86252643f51ae29d4efdbca1b56e3aebecee9f4a9fcf54"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/manifiesto.json",
+      "bytes": 1125,
+      "sha256": "d855ba5e5c99d1cb86b256d5b762c101fa85858c730d9ae69a859fec176dfe88"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/metricas.csv",
+      "bytes": 1008,
+      "sha256": "5b6c81530e44fe1d15dd040a8932931fe58e02195435dbffac6e88acfe5c79a7"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/metricas_por_bloque.csv",
+      "bytes": 5084,
+      "sha256": "90385d3574720d8613793de3957fbc15f8daa04f67db99156cebc239c879a48f"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/modelo_ampliado.joblib",
+      "bytes": 1396,
+      "sha256": "169cda11f4b222307f58bacd2c1bafb54b49c3aee70848486507eb4f8c8a0f14"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/modelo_lineal_portable.json",
+      "bytes": 2977,
+      "sha256": "7419f4a9991aeb2fd87f5da964c1a3defae4f3545b14a9e5a83ef3c36b200111"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/modelo_metadata.json",
+      "bytes": 471,
+      "sha256": "c2cd5d8bf668df9e5492f52607235ceb52ec1438753a5eceac570571aedff35a"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/particiones_externas.csv",
+      "bytes": 959,
+      "sha256": "cc912f296d70c2391bac513e399033973431fbfeedd86fca62bc1216d3817bcd"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/particiones_internas.csv",
+      "bytes": 4715,
+      "sha256": "698e941578739aa9b5eef4cba01c8fbad0eafec3c019903fb364c5c0ed0842ec"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/particiones_reajuste.csv",
+      "bytes": 968,
+      "sha256": "49845c9c00ede0806dd7db20c8e95a047d28843b2cac271223cd80fc615aa3df"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/predicciones_externas.csv",
+      "bytes": 97790,
+      "sha256": "744b4ab34d6c4be8421da8ae5eef543301d34f82a1923fbc9ca05bb521c19f11"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/resumen_parametros.csv",
+      "bytes": 5500,
+      "sha256": "a4cbef46c89f1225e957aaf484abe17ba12aa6fe04e73e5223fc1e5b78a247af"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/seleccion_predefinida.json",
+      "bytes": 1064,
+      "sha256": "73d7f03be061dd47bd67f69b862c1872297f3ab18a8c8a9012ed9655a7b28db5"
+    },
+    {
+      "ruta": "outputs/ejecucion_20261110T001702732455Z/tamanos_bloques.csv",
+      "bytes": 171,
+      "sha256": "964e9e2251857f7de97c113cb7202379653d691a4b8e1dfcdce5c1d60b4f3bce"
+    },
+    {
+      "ruta": "requirements.txt",
+      "bytes": 130,
+      "sha256": "0e0dfc0f91b3460094cabc9edb526a7a664292634141032d8079fb2fd7cf7a1d"
+    },
+    {
+      "ruta": "seera_final.py",
+      "bytes": 16706,
+      "sha256": "b0d3bb2bedfeeea8d3dce7bb5d8036afb1d2b2b06c8dcf4dae7b4a7706273448"
+    },
+    {
+      "ruta": "verificar_resultados.py",
+      "bytes": 2290,
+      "sha256": "52c5ea1baa4d24e42dd7d90d9ce1e98a6d038bcd56d0e71bbda8e2f8b0067f46"
+    }
+  ]
+}

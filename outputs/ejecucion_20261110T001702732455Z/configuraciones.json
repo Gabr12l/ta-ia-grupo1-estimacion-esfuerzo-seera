@@ -1,0 +1,5186 @@
+[
+  {
+    "bloque": 1,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 3447.5672952724562,
+    "parametros": {},
+    "segundos": 0.0021671869999408955,
+    "candidatos": [
+      {
+        "MAE_interno": 3447.5672952724562,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 9,
+    "rango_lineal": 10,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5067.791666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4449.175415426587,
+    "parametros": {
+      "max_depth": 4,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.036800330999540165,
+    "candidatos": [
+      {
+        "MAE_interno": 4643.873708299132,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5076.470514617813,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5545.69853156272,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4496.656134609025,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4805.416099123678,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5383.904660555226,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4449.175415426587,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4621.930342675264,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5396.370124078224,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4584.320089285714,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4618.2090257109785,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5396.370124078224,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4572.272222222222,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4594.787597139551,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5396.370124078224,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5067.791666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5091.346726190475,
+    "parametros": {
+      "q": 7,
+      "weights": "uniform"
+    },
+    "segundos": 0.019095788999948127,
+    "candidatos": [
+      {
+        "MAE_interno": 5523.375,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5414.767403461031,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5236.412499999999,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5299.343409220237,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5091.346726190475,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5133.272566986253,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5158.287037037037,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5182.4938674195555,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5067.791666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 7790.893259244228,
+    "parametros": {},
+    "segundos": 0.0014646170002379222,
+    "candidatos": [
+      {
+        "MAE_interno": 7790.893259244228,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 8,
+    "rango_lineal": 9,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 7889.602886548302,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 10
+    },
+    "segundos": 0.03045200999986264,
+    "candidatos": [
+      {
+        "MAE_interno": 8496.50487813181,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8358.835143560815,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7889.602886548302,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8554.531580687832,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8216.60388723545,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7894.506404914529,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8377.375630373677,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8163.982648809523,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7894.506404914529,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8193.046081349206,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8164.071769179895,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7894.506404914529,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8280.877273478836,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8164.071769179895,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7894.506404914529,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 7990.3961805555555,
+    "parametros": {
+      "q": 5,
+      "weights": "uniform"
+    },
+    "segundos": 0.015824324000277556,
+    "candidatos": [
+      {
+        "MAE_interno": 9218.553819444445,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9218.553819444445,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 7990.3961805555555,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7990.3961805555555,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8124.992311507936,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8124.992311507936,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8137.942046957673,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8137.942046957673,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 3718.298857224299,
+    "parametros": {},
+    "segundos": 0.0050222909994772635,
+    "candidatos": [
+      {
+        "MAE_interno": 3718.298857224299,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5067.791666666667,
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707,
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4909.076020193714,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07563916700019035,
+    "candidatos": [
+      {
+        "MAE_interno": 5169.029958299132,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5410.580782474956,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5545.69853156272,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4909.076020193714,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5382.644372933201,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5383.904660555226,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5050.29656938044,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5403.027829447751,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5457.6061438948045,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5105.4211474867725,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5362.2933985543195,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5457.6061438948045,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5253.760416666667,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5371.080586557539,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5457.6061438948045,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5067.791666666667,
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707,
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5249.462349427252,
+    "parametros": {
+      "q": 5,
+      "weights": "distance"
+    },
+    "segundos": 0.03798593200008327,
+    "candidatos": [
+      {
+        "MAE_interno": 5411.598958333333,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5397.857663590768,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5320.092708333334,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5249.462349427252,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5491.299851190476,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5392.370247358917,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5384.93923611111,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5301.59167003504,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5067.791666666667,
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707,
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 7685.003934233471,
+    "parametros": {},
+    "segundos": 0.004497527000239643,
+    "candidatos": [
+      {
+        "MAE_interno": 7685.003934233471,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 6942.951749602084,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 5
+    },
+    "segundos": 0.06712241700006416,
+    "candidatos": [
+      {
+        "MAE_interno": 6991.324714918018,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 6942.951749602084,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7147.280692716006,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7121.159816778275,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7181.987494164332,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7317.736554677961,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7717.21377004795,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7500.395753761574,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7331.730453487485,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8110.895429512617,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7562.3845195169415,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7331.730453487485,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8303.558159722223,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7571.328373015873,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7331.730453487485,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 6651.691076232154,
+    "parametros": {
+      "q": 5,
+      "weights": "distance"
+    },
+    "segundos": 0.0359716329994626,
+    "candidatos": [
+      {
+        "MAE_interno": 6924.232638888888,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6926.36516010208,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6714.319791666666,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6651.691076232154,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6876.219494047618,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6785.275447289702,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6834.233796296296,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6725.544537894869,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4018.94995907391,
+    "parametros": {},
+    "segundos": 0.001991074000216031,
+    "candidatos": [
+      {
+        "MAE_interno": 4018.94995907391,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 9,
+    "rango_lineal": 10,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5376.822916666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4773.161452000081,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.03578967199973704,
+    "candidatos": [
+      {
+        "MAE_interno": 5510.11721893459,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5555.748563940401,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5471.609155081314,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4773.161452000081,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5385.930462909627,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5263.4195451502355,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4958.934051890432,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5200.331531498016,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5287.493756480958,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5220.611654202279,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5228.293417404355,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5287.493756480958,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5246.331597222223,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5202.031588955027,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5287.493756480958,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5376.822916666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5510.268075210402,
+    "parametros": {
+      "q": 9,
+      "weights": "distance"
+    },
+    "segundos": 0.019546402999367274,
+    "candidatos": [
+      {
+        "MAE_interno": 5943.170138888888,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5838.4900404704795,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5918.412499999999,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5688.278121587319,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5834.927083333333,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5553.871304297652,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5680.163194444445,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5510.268075210402,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5376.822916666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8703.985710582341,
+    "parametros": {},
+    "segundos": 0.001441632999558351,
+    "candidatos": [
+      {
+        "MAE_interno": 8703.985710582341,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 8,
+    "rango_lineal": 9,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 8232.395997154345,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "segundos": 0.02909407100014505,
+    "candidatos": [
+      {
+        "MAE_interno": 8870.899840150973,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8605.363561539287,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8244.246326669387,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8717.135615533052,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8448.837872676484,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8232.395997154345,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8620.27740759733,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8375.213856249342,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8232.395997154345,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8370.235136189893,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8344.098757817575,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8232.395997154345,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8711.802230076057,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8383.876149792886,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8232.395997154345,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 9108.896841931217,
+    "parametros": {
+      "q": 9,
+      "weights": "uniform"
+    },
+    "segundos": 0.015411446999678446,
+    "candidatos": [
+      {
+        "MAE_interno": 9497.182291666666,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9497.182291666666,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 9345.282986111111,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9345.282986111111,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 9283.387251984126,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9283.387251984126,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 9108.896841931217,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9108.896841931217,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4831.972322193314,
+    "parametros": {},
+    "segundos": 0.005246845999863581,
+    "candidatos": [
+      {
+        "MAE_interno": 4831.972322193314,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5376.822916666667,
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102,
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4934.165172238178,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07304787600060081,
+    "candidatos": [
+      {
+        "MAE_interno": 5510.11721893459,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5698.9548139404005,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5471.609155081314,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4934.165172238178,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5278.218905369943,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5263.4195451502355,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5540.703525351113,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5446.307895585318,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5386.896141473416,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5841.019570360196,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5720.028819444445,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5386.896141473416,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5611.355902777777,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5722.667245370371,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5386.896141473416,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5376.822916666667,
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102,
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 6162.182265974116,
+    "parametros": {
+      "q": 7,
+      "weights": "distance"
+    },
+    "segundos": 0.03867184599948814,
+    "candidatos": [
+      {
+        "MAE_interno": 6789.82638888889,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6643.41810256118,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6394.91875,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6334.633177006011,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6242.5245535714275,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6162.182265974116,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6264.480902777777,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6187.542856890806,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5376.822916666667,
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102,
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8554.093569427516,
+    "parametros": {},
+    "segundos": 0.004529705000095419,
+    "candidatos": [
+      {
+        "MAE_interno": 8554.093569427516,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 7483.5883363371,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.06814869000027102,
+    "candidatos": [
+      {
+        "MAE_interno": 7483.5883363371,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7529.3454298150755,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7874.735789354471,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7651.387959839057,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7795.2184306321915,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8354.776487608933,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9314.292544562852,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8114.980520006614,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8397.602008442265,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9850.973182870372,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8353.787787285053,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8397.602008442265,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9294.856770833334,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8471.67828207672,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8397.602008442265,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 8170.084490740741,
+    "parametros": {
+      "q": 9,
+      "weights": "uniform"
+    },
+    "segundos": 0.036884806999296416,
+    "candidatos": [
+      {
+        "MAE_interno": 9040.26215277778,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9041.76557883797,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8754.487500000001,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8877.662661089218,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8541.761904761906,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8619.34299843127,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8170.084490740741,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8281.307735317976,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 3259.5657326150904,
+    "parametros": {},
+    "segundos": 0.0021171220005271607,
+    "candidatos": [
+      {
+        "MAE_interno": 3259.5657326150904,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 9,
+    "rango_lineal": 10,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5051.864583333333
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 3207.2708894081466,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.035434700999758206,
+    "candidatos": [
+      {
+        "MAE_interno": 3207.2708894081466,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3775.802833852591,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3838.710945430555,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3550.9778768499455,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3653.4313891362704,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3605.977680569511,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3831.6780900234025,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3627.142237103175,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3930.2542348710317,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3630.5670056216936,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3971.6875,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3630.5670056216936,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5051.864583333333
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 3690.557291666666,
+    "parametros": {
+      "q": 9,
+      "weights": "uniform"
+    },
+    "segundos": 0.01878415400005906,
+    "candidatos": [
+      {
+        "MAE_interno": 3751.9739583333335,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 3799.618503662356,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 3841.3489583333335,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 3806.2307865990947,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 3814.0699404761904,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 3802.33602994759,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 3690.557291666666,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 3767.685344699986,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5051.864583333333
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 7873.344711409926,
+    "parametros": {},
+    "segundos": 0.0014101759998084162,
+    "candidatos": [
+      {
+        "MAE_interno": 7873.344711409926,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 8,
+    "rango_lineal": 9,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 6317.6427436279,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 10
+    },
+    "segundos": 0.031685142000242195,
+    "candidatos": [
+      {
+        "MAE_interno": 7243.359304023693,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 6644.385859670622,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6415.952471238862,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7414.94035218254,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 6654.812374084249,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6317.6427436279,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7286.288513947246,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 6498.233147321429,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6317.6427436279,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7419.540786210317,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 6531.934970238096,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6317.6427436279,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7440.037834821429,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 6580.976636904762,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6317.6427436279,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 8202.447916666666,
+    "parametros": {
+      "q": 7,
+      "weights": "uniform"
+    },
+    "segundos": 0.016119324000101187,
+    "candidatos": [
+      {
+        "MAE_interno": 9084.032986111111,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9084.032986111111,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8855.836458333333,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8855.836458333333,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8202.447916666666,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8202.447916666666,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8245.34732556217,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8245.34732556217,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 3764.259363121894,
+    "parametros": {},
+    "segundos": 0.005297361999510031,
+    "candidatos": [
+      {
+        "MAE_interno": 3764.259363121894,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5051.864583333333,
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207,
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 3207.2708894081466,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07370294500015007,
+    "candidatos": [
+      {
+        "MAE_interno": 3207.2708894081466,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4121.958389408146,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3838.710945430555,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3486.2294794140485,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3828.981190723572,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3605.977680569511,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3534.750795876577,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3876.041245039683,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3743.8546378968254,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3885.7502728174604,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3821.6597222222226,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3885.7502728174604,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5051.864583333333,
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207,
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 3825.0014510651204,
+    "parametros": {
+      "q": 5,
+      "weights": "distance"
+    },
+    "segundos": 0.039301857000282325,
+    "candidatos": [
+      {
+        "MAE_interno": 4122.765625,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4121.763062096296,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 3856.25625,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 3825.0014510651204,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 4127.2016369047615,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4072.645316056363,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 4193.679976851852,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4132.934214844896,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5051.864583333333,
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207,
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8009.058459562068,
+    "parametros": {},
+    "segundos": 0.004776843999934499,
+    "candidatos": [
+      {
+        "MAE_interno": 8009.058459562068,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 6493.451140873017,
+    "parametros": {
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "segundos": 0.06797067399929801,
+    "candidatos": [
+      {
+        "MAE_interno": 7120.629846290652,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7085.614062691026,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6548.252534916351,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 6776.387083460521,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7079.455345060033,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6516.61946932898,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7145.337584579774,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7093.031020426333,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6493.451140873017,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7052.510317460317,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7140.3276207010595,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6493.451140873017,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7460.0109375,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7141.885954034392,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6493.451140873017,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 6149.07638888889,
+    "parametros": {
+      "q": 9,
+      "weights": "uniform"
+    },
+    "segundos": 0.03692483699978766,
+    "candidatos": [
+      {
+        "MAE_interno": 6951.159722222223,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7321.290966229208,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6618.035416666667,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7017.961129119838,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6352.344494047618,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6758.664726887949,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6149.07638888889,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6539.966104421498,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4115.070247405153,
+    "parametros": {},
+    "segundos": 0.001989762000448536,
+    "candidatos": [
+      {
+        "MAE_interno": 4115.070247405153,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 9,
+    "rango_lineal": 10,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5193.03125
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4474.867859162896,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.03719810500024323,
+    "candidatos": [
+      {
+        "MAE_interno": 4750.927989392957,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5223.79640218676,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4865.197890967284,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4474.867859162896,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4829.574340644377,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4769.145776196645,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4884.627043650794,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4745.052660934744,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4778.224935396167,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5025.729716435186,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4684.32520711501,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4778.224935396167,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5125.400347222222,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4679.261226851852,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4778.224935396167,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5193.03125
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5063.475694444444,
+    "parametros": {
+      "q": 3,
+      "weights": "uniform"
+    },
+    "segundos": 0.01938177700048982,
+    "candidatos": [
+      {
+        "MAE_interno": 5063.475694444444,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5123.97595471874,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5092.839583333333,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5091.01521480425,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5188.382440476191,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5148.896394736356,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5297.314814814815,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5105.843285516035,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5193.03125
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8717.289137637303,
+    "parametros": {},
+    "segundos": 0.001419520000126795,
+    "candidatos": [
+      {
+        "MAE_interno": 8717.289137637303,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 8,
+    "rango_lineal": 9,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 8336.101001886878,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 5
+    },
+    "segundos": 0.029997139999977662,
+    "candidatos": [
+      {
+        "MAE_interno": 8776.130905401726,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8336.101001886878,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8715.553481125356,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8773.022344684681,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8498.976071555759,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8656.833227513227,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8729.32019730989,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8373.090201846764,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8656.833227513227,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8664.620718412618,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8344.636868513431,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8656.833227513227,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8905.142114049146,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8344.636868513431,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8656.833227513227,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 9423.653621031744,
+    "parametros": {
+      "q": 7,
+      "weights": "uniform"
+    },
+    "segundos": 0.015416514999742503,
+    "candidatos": [
+      {
+        "MAE_interno": 9672.743055555557,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9672.743055555557,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 9678.071180555555,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9678.071180555555,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 9423.653621031744,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9423.653621031744,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 9632.558362268517,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9632.558362268517,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4746.200001948159,
+    "parametros": {},
+    "segundos": 0.0051158500000383356,
+    "candidatos": [
+      {
+        "MAE_interno": 4746.200001948159,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 21,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5193.03125,
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059,
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4750.927989392957,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07265888599977188,
+    "candidatos": [
+      {
+        "MAE_interno": 4750.927989392957,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5223.79640218676,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4865.197890967284,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4803.870350634631,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5018.2875960050005,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4769.145776196645,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5530.907781673736,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5025.019368212197,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4830.634889099871,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5489.838136574074,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5000.3635540674595,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4822.676555766538,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5619.147569444445,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5100.009999173281,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4822.676555766538,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5193.03125,
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059,
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5625.0223970080215,
+    "parametros": {
+      "q": 3,
+      "weights": "distance"
+    },
+    "segundos": 0.03851070600012463,
+    "candidatos": [
+      {
+        "MAE_interno": 5936.447916666667,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5625.0223970080215,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6305.566666666667,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5919.736846747073,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6391.196428571428,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6019.36971429184,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6317.01736111111,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5989.522553126721,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5193.03125,
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059,
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8845.63026707618,
+    "parametros": {},
+    "segundos": 0.0046153330004017334,
+    "candidatos": [
+      {
+        "MAE_interno": 8845.63026707618,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 7584.193971942409,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.06908523899983265,
+    "candidatos": [
+      {
+        "MAE_interno": 7683.952366510464,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8660.367814377872,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9130.791573867047,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7584.193971942409,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8808.95030481951,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9413.165580320217,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8427.42722970875,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 9056.784417794895,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9478.933438001268,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8210.738194444444,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8914.880999917328,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9478.933438001268,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9494.940277777778,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8919.222821593916,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9478.933438001268,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 8348.721284751633,
+    "parametros": {
+      "q": 9,
+      "weights": "distance"
+    },
+    "segundos": 0.03618094600005861,
+    "candidatos": [
+      {
+        "MAE_interno": 8826.774305555557,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8674.717912313225,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8621.089583333332,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8391.609541619086,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8548.735119047618,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8406.579925480999,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8437.01273148148,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8348.721284751633,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 3385.7930145711343,
+    "parametros": {},
+    "segundos": 0.001954119000401988,
+    "candidatos": [
+      {
+        "MAE_interno": 3385.7930145711343,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 9,
+    "rango_lineal": 10,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5436.40625
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 3909.156493564306,
+    "parametros": {
+      "max_depth": 4,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.035541541000384314,
+    "candidatos": [
+      {
+        "MAE_interno": 5128.417719907407,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5155.92683190275,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5418.576798115079,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4109.229720702126,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4780.654088261649,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5184.925132571145,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3909.156493564306,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4724.2763806216935,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5176.492915723982,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3941.5806528166827,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4691.1208250661375,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5176.492915723982,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4033.772569444444,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4659.306626157407,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5176.492915723982,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5436.40625
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 3,
+    "paquete": 3,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 4167.519975315013,
+    "parametros": {
+      "q": 5,
+      "weights": "distance"
+    },
+    "segundos": 0.01907317499990313,
+    "candidatos": [
+      {
+        "MAE_interno": 4432.809027777777,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4320.810789748771,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 4316.327430555555,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4167.519975315013,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 4915.210317460317,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4313.210930570003,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5058.835069444444,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4341.8419675695895,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 11,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {
+      "Estimated effort": 5436.40625
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 7982.83072530656,
+    "parametros": {},
+    "segundos": 0.0014410519997909432,
+    "candidatos": [
+      {
+        "MAE_interno": 7982.83072530656,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 8,
+    "rango_lineal": 9,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 7752.458391203704,
+    "parametros": {
+      "max_depth": 4,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.02956715899927076,
+    "candidatos": [
+      {
+        "MAE_interno": 7894.974290236928,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8005.183587367239,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8185.198695271533,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7978.036773122712,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7894.235032772011,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7975.070166026857,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7752.458391203704,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7905.147284226191,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7975.070166026857,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7889.870692791005,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7868.2271019345235,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7975.070166026857,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8162.921502976191,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7891.045895337302,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7975.070166026857,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 2,
+    "paquete": 3,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 8618.098958333334,
+    "parametros": {
+      "q": 3,
+      "weights": "uniform"
+    },
+    "segundos": 0.015398407000247971,
+    "candidatos": [
+      {
+        "MAE_interno": 8618.098958333334,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8618.098958333334,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8907.024652777778,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8907.024652777778,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8851.858779761906,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8851.858779761906,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8827.796961805556,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8840.631294303263,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 10,
+    "rango_lineal": null,
+    "imputacion": {},
+    "medias": {},
+    "desviaciones": {},
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4334.991447513655,
+    "parametros": {},
+    "segundos": 0.00537601900032314,
+    "candidatos": [
+      {
+        "MAE_interno": 4334.991447513655,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5436.40625,
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422,
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 3963.9978868433614,
+    "parametros": {
+      "max_depth": 4,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07199214000047505,
+    "candidatos": [
+      {
+        "MAE_interno": 5128.417719907407,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5155.92683190275,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5418.576798115079,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4109.229720702126,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4780.654088261649,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5184.925132571145,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3963.9978868433614,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4735.245734126984,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5178.646200980392,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4070.026686507937,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4739.7783662075935,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5178.646200980392,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4215.902777777778,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4759.031960978836,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5178.646200980392,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5436.40625,
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422,
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5377.40301119012,
+    "parametros": {
+      "q": 9,
+      "weights": "distance"
+    },
+    "segundos": 0.03856043999985559,
+    "candidatos": [
+      {
+        "MAE_interno": 5750.918402777778,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5718.2935470186685,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5637.946874999999,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5529.631646207335,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5677.956101190477,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5536.912188790517,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5479.476851851851,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5377.40301119012,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5436.40625,
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422,
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 9081.782081358531,
+    "parametros": {},
+    "segundos": 0.004673440000260598,
+    "candidatos": [
+      {
+        "MAE_interno": 9081.782081358531,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 6563.6633038749505,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.06834244899982878,
+    "candidatos": [
+      {
+        "MAE_interno": 7034.117787575284,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8056.875525670523,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8052.937158913167,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 6563.6633038749505,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8392.600724120826,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8080.672583816253,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7504.373948109936,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8535.904870191784,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8243.862837619163,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7500.588715277777,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8663.172631448413,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8243.862837619163,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7503.403645833333,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8735.673053075398,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8243.862837619163,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 7114.73125,
+    "parametros": {
+      "q": 5,
+      "weights": "uniform"
+    },
+    "segundos": 0.03651904099933745,
+    "candidatos": [
+      {
+        "MAE_interno": 7636.597222222222,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7741.936160963368,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 7114.73125,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7146.703370979169,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 7401.895089285715,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7294.243511400723,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 7280.5995370370365,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7181.377250199471,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  }
+]
