@@ -1,6 +1,6 @@
 {
   "ejecucion_del_informe": "ejecucion_20261110T001702732455Z",
-  "alcance": "Apartado experimental del Grupo 1",
+  "alcance": "Apartado experimental del Grupo 1; formulario local del diseño original",
   "archivos": [
     {
       "ruta": ".gitignore",
@@ -14,8 +14,8 @@
     },
     {
       "ruta": "README.md",
-      "bytes": 6484,
-      "sha256": "932e0a0830f0d3f59f18b682f5c2e12d533ccd4795caa4fea5b6e5742b5847f6"
+      "bytes": 7284,
+      "sha256": "e52ad87b28d31f2e4987b8965143c281735c63de2535991b00e01966eef10a2f"
     },
     {
       "ruta": "data/docs/ReadMe.pdf",
@@ -44,8 +44,13 @@
     },
     {
       "ruta": "docs/EXPERIMENTO.md",
-      "bytes": 3025,
-      "sha256": "997e5022fe9974b5395dd86b2dc65ba7cd699ac4c2f1941c1ee33c76a52d6cea"
+      "bytes": 3545,
+      "sha256": "9c874d91cbefedda1d21916971f387fcdd5f28b4265c31588b12e74808f19ccb"
+    },
+    {
+      "ruta": "docs/validacion_formulario.json",
+      "bytes": 471,
+      "sha256": "5a27ee9ff36bbe1fd524abc2be23dcdaf685e20ac2c276e2581a44cc6671e97d"
     },
     {
       "ruta": "outputs/EJECUCION_DEL_INFORME.txt",
@@ -176,6 +181,11 @@
       "ruta": "outputs/ejecucion_20261110T001702732455Z/tamanos_bloques.csv",
       "bytes": 171,
       "sha256": "964e9e2251857f7de97c113cb7202379653d691a4b8e1dfcdce5c1d60b4f3bce"
+    },
+    {
+      "ruta": "prototipo_local.html",
+      "bytes": 11696,
+      "sha256": "1f9412a043caee2c41bfeae34f6edf4fe8b7acda3c78a3727c4190ddd6bb9c82"
     },
     {
       "ruta": "requirements.txt",

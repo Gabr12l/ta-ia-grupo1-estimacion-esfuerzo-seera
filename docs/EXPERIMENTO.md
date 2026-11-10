@@ -29,3 +29,7 @@ El modelo ampliado de menor MAE externo se reajusta con toda la muestra para la 
 Consulte las tablas del README y los archivos `metricas.csv`, `metricas_por_bloque.csv`, `predicciones_externas.csv`, `configuraciones.json` y `errores_pareados_lineal7_B1.csv` de la ejecución identificada en `outputs/EJECUCION_DEL_INFORME.txt`.
 
 El lineal original conserva el menor MAE. Ampliar atributos mejora el escenario sin esfuerzo estimado, pero ninguno de seis entradas supera la mediana. Ninguno de siete supera el esfuerzo estimado. No se alteraron resultados para favorecer la hipótesis.
+
+## Formulario del diseño original
+
+`prototipo_local.html` concreta el formulario local previsto: cinco selectores y dos campos numéricos. Reutiliza el modelo ampliado guardado, funciona sin conexión y no reentrena. Su cálculo se contrastó con Python en 116 proyectos completos; la diferencia máxima fue menor que 10⁻⁶ horas-persona. La comprobación cubre cálculo, eventos y rechazo de entradas inválidas; no se realizó revisión visual en navegador. No cambia el protocolo ni los resultados del cuaderno.

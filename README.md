@@ -10,6 +10,12 @@ Parte experimental de la Tarea Académica del **Grupo 1 · Inteligencia Artifici
 
 GitHub permite leer las salidas guardadas. La ejecución del código requiere descargar o clonar la carpeta y abrir el cuaderno en Jupyter o VS Code.
 
+## Formulario local
+
+Abre **prototipo_local.html** con doble clic después de extraer la carpeta. No necesita instalar Python ni conectarse a internet. Tiene los siete campos del modelo ampliado y utiliza la preparación y los coeficientes ya guardados, sin reentrenar. Los códigos y etiquetas corresponden al diccionario oficial.
+
+La discrepancia frente al esfuerzo estimado no es un error real. La ampliación no superó B1: esta consulta demuestra funcionamiento, sin justificar uso operativo. `docs/validacion_formulario.json` registra las pruebas de cálculo y eventos; no se realizó una revisión visual en navegador.
+
 ## Pregunta y protocolo
 
 Comparamos regresión lineal, árbol de regresión y KNN para predecir el esfuerzo real registrado de proyectos de SEERA en horas-persona. Contrastamos el esquema original de **3 entradas** con uno ampliado de **7** y versiones complementarias sin esfuerzo estimado (**2 y 6**).
@@ -75,6 +81,8 @@ Se verifica la integridad de los bloques, la huella del Excel y las métricas re
 ## Estructura
 
 - `Grupo1-TA-Experimentos.ipynb`: cuaderno principal explicado y ejecutado.
+- `prototipo_local.html`: formulario local con el modelo ampliado guardado.
+- `docs/validacion_formulario.json`: verificación de equivalencia con Python y de validaciones.
 - `seera_final.py`: núcleo reutilizable de funciones, incluido también dentro del cuaderno.
 - `data/raw`: Excel original sin modificar.
 - `data/docs`: lectura, códigos y fórmulas oficiales de SEERA.

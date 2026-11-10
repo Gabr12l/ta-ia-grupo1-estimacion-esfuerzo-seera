@@ -1,0 +1,11 @@
+{
+  "casos_comparados": 116,
+  "maxima_diferencia_absoluta": 1.4551915228366852e-11,
+  "casos_invalidos_rechazados": 7,
+  "porcentaje_estimado_cero": null,
+  "avisos_extrapolacion": true,
+  "eventos_de_consulta_y_error_verificados": true,
+  "selectores": 5,
+  "entradas_numericas": 2,
+  "metodo": "JavaScript en Node VM; comparación contra consultar de Python. Se verifican cálculo y eventos con elementos de prueba; no se ejecutó una revisión visual en navegador."
+}

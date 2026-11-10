@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consulta local de esfuerzo — SEERA Grupo 1</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:32px 20px;background:#f2f5f8;color:#172f42;font-family:system-ui,Arial,sans-serif;line-height:1.5}main{max-width:980px;margin:auto;background:white;padding:32px;border:1px solid #dce3e9;border-radius:16px}h1{font-size:28px;line-height:1.2;margin:8px 0 16px}h2{font-size:19px;margin:0 0 8px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;color:#45677f}p{margin:0 0 16px}.muted,small{color:#536878}form{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin:24px 0}label{display:block;font-weight:650;font-size:14px}input,select{width:100%;font:inherit;margin-top:7px;padding:10px;border:1px solid #8a9aa7;border-radius:6px;background:#fff;color:#172f42}small{display:block;font-size:12px;margin-top:4px}.wide{grid-column:1/-1}button{border:0;border-radius:7px;background:#214f71;color:white;padding:13px 22px;font:inherit;font-weight:700;cursor:pointer}button:hover{background:#173e5c}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #bc6c25;outline-offset:2px}#resultado{background:#edf4f8;border-left:4px solid #214f71;padding:20px;margin-top:20px}#error{color:#9b2d26;font-weight:650}dl{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px;margin:12px 0}dt{color:#536878}dd{margin:0;font-weight:650}.prediction{font-size:28px;font-weight:750;margin:6px 0}.foot{border-top:1px solid #dce3e9;padding-top:16px;margin-top:24px;font-size:13px}code{overflow-wrap:anywhere}@media(max-width:640px){body{padding:12px}main{padding:20px}form,dl{grid-template-columns:1fr}.wide{grid-column:auto}h1{font-size:24px}}
+</style>
+<main>
+<div class="eyebrow">INTELIGENCIA ARTIFICIAL · GRUPO 1</div>
+<h1>Consulta de esfuerzo registrado</h1>
+<p>Demostración local del modelo lineal ampliado de SEERA. Completa los siete campos para obtener una predicción en horas-persona.</p>
+<p class="muted">Estudio retrospectivo de calibración. Su evaluación no demuestra uso temprano ni transferencia a otros países. El formulario funciona sin conexión y utiliza el modelo ya entrenado; tus entradas permanecen en este navegador.</p>
+<form id="consulta" novalidate>
+<label>Tipo de desarrollo<select name="tipo"><option value="1">1 · Desarrollo de software nuevo</option><option value="2">2 · Actualizar software existente</option><option value="3">3 · Modificar software existente</option><option value="4">4 · Personalizar software importado</option></select><small>Development type: categoría nominal.</small></label>
+<label>Dominio de aplicación<select name="dominio"><option value="1">1 · Sistemas bancarios</option><option value="2">2 · ERP</option><option value="3">3 · Aplicaciones móviles</option><option value="5">5 · Financiero y administrativo</option><option value="6">6 · Aplicaciones web</option><option value="7">7 · Aplicaciones a medida</option></select><small>Application domain: códigos del diccionario.</small></label>
+<label>Esfuerzo estimado<input name="esfuerzo_estimado" type="number" min="0" step="any" value="6000" required><small>Estimated effort, en horas-persona; debe ser finito y ≥ 0.</small></label>
+<label>Tamaño del producto<input name="object_points" type="number" min="0" step="any" value="80" required><small>Object points de SEERA: cantidad de pantallas + reportes.</small></label>
+<label>Complejidad del producto<select name="complejidad"><option value="1">1 · Claro y simple</option><option value="2" selected>2 · Claro con algunas complejidades</option><option value="3">3 · Complejo</option><option value="4">4 · Algoritmos muy complejos y difíciles</option></select><small>Product complexity: escala ordinal.</small></label>
+<label>Experiencia con el lenguaje<select name="experiencia_lenguaje"><option value="1">1 · Más de 4 años</option><option value="2" selected>2 · De 2 a 3 años</option><option value="3">3 · De 1 a 2 años</option><option value="4">4 · De 6 meses a 1 año</option><option value="5">5 · Primera experiencia en este proyecto</option></select><small>Se utiliza el código ordinal; no se convierte en años exactos.</small></label>
+<label class="wide">Metodología<select name="metodologia"><option value="1">1 · Cascada</option><option value="2" selected>2 · Ágil</option><option value="3">3 · Híbrida</option><option value="4">4 · Ninguna</option><option value="6">6 · Prototipado</option><option value="7">7 · Otra</option></select><small>Methodology: categoría nominal, sin orden de calidad.</small></label>
+<div class="wide"><button type="submit">Consultar modelo guardado</button></div>
+</form>
+<p id="error" role="alert" hidden></p>
+<section id="resultado" aria-live="polite" hidden></section>
+<div class="foot"><p><strong>Cómo interpretar el resultado.</strong> La discrepancia compara dos estimaciones; no mide el error real, porque se desconoce el esfuerzo finalmente registrado del proyecto consultado. El porcentaje solo se calcula si el esfuerzo estimado es mayor que cero.</p><p>MAE externo del lineal ampliado: <strong>4292,72 horas-persona</strong>; referencia del esfuerzo estimado: <strong>4018,35</strong>. La ampliación no superó esa referencia. El modelo original de tres entradas obtuvo menor MAE (3345,04). Se utiliza la versión ampliada para demostrar el diseño de siete campos.</p><p class="muted">Modelo reajustado con 120 proyectos. Fuente: SEERA 1.3, Mustafa y Osman (2020). Archivo de origen: <code>modelo_lineal_portable.json</code>. No se reentrena al consultar.</p></div>
+</main>
+<script id="modelo" type="application/json">{"familia": "lineal", "entradas": ["Development type", "Application domain", "Estimated effort", "Object points", "Product complexity", "Programmers experience in programming language", "Methodology"], "n_entrenamiento": 120, "parametros": {}, "MAE_seleccion_interna_reajuste": 4520.580166998849, "advertencia": "El MAE interno del reajuste no es una nueva prueba externa. La familia se eligió mirando resultados externos.", "preparacion": {"family": "lineal", "pack": 7, "with_e": true, "cat": ["Development type", "Application domain", "Methodology"], "newnum": ["Object points", "Product complexity", "Programmers experience in programming language"], "num": ["Estimated effort", "Object points", "Product complexity", "Programmers experience in programming language"], "fill": {"Object points": 93.0, "Product complexity": 2.0, "Programmers experience in programming language": 1.0}, "means": {"Estimated effort": 5225.183333333333, "Object points": 201.63333333333333, "Product complexity": 2.066666666666667, "Programmers experience in programming language": 2.025}, "stds": {"Estimated effort": 6852.375664667125, "Object points": 248.0598695655726, "Product complexity": 0.9285592184789413, "Programmers experience in programming language": 1.1508149286483904}, "names": ["Development type=2", "Development type=3", "Development type=4", "Application domain=2", "Application domain=3", "Application domain=5", "Application domain=6", "Application domain=7", "Methodology=2", "Methodology=3", "Methodology=4", "Methodology=6", "Methodology=7", "Estimated effort", "Object points", "Product complexity", "Programmers experience in programming language", "Object points:ausente", "Product complexity:ausente", "Programmers experience in programming language:ausente"], "seen": {"Development type": [1, 2, 3, 4], "Application domain": [1, 2, 3, 5, 6, 7], "Methodology": [1, 2, 3, 4, 6, 7]}}, "beta": [-6397.339283785158, -4.292317376834467, -1916.5968930177503, -559.5787960283835, 5310.930852762905, 3493.575117888503, 4747.66766052439, 3646.736958740668, 6094.8159706639, -631.4601307648578, -514.6280023199447, 586.6383788761201, -883.9789682634098, 4239.479893652787, 1.4459153821268689, 9.41023042971821, 13.368382575773069, 776.6715532162206, 28003.66986559879, 3872.3961628894067, -32193.4171456106], "rango": 21, "rangos_observados": {"Estimated effort": [176.0, 50688.0], "Object points": [7.0, 1700.0]}}</script>
+<script>
+'use strict';
+const MODELO=JSON.parse(document.getElementById('modelo').textContent);
+const CAMPOS={tipo:'Development type',dominio:'Application domain',esfuerzo_estimado:'Estimated effort',object_points:'Object points',complejidad:'Product complexity',experiencia_lenguaje:'Programmers experience in programming language',metodologia:'Methodology'};
+const NIVELES={tipo:[1,2,3,4],dominio:[1,2,3,5,6,7],complejidad:[1,2,3,4],experiencia_lenguaje:[1,2,3,4,5],metodologia:[1,2,3,4,6,7]};
+function predecir(entrada){
+ const registro={};
+ for(const [campo,columna] of Object.entries(CAMPOS)){
+   const bruto=entrada[campo];
+   if(bruto===null||bruto===undefined||typeof bruto==='boolean'||String(bruto).trim()==='')throw new Error('Completa todos los campos; falta '+campo+'.');
+   const valor=Number(bruto);
+   if(!Number.isFinite(valor)||valor<0)throw new Error('El campo '+campo+' debe ser un número finito y no negativo.');
+   if(NIVELES[campo]&&!NIVELES[campo].includes(valor))throw new Error('Código inválido en '+campo+'.');
+   registro[columna]=valor;
+ }
+ if(MODELO.familia!=='lineal'||MODELO.beta.length!==MODELO.preparacion.names.length+1)throw new Error('Modelo incompatible.');
+ const z=MODELO.preparacion.names.map(nombre=>{
+   if(nombre.endsWith(':ausente'))return 0;
+   if(nombre.includes('=')){const [columna,nivel]=nombre.split('=');return registro[columna]===Number(nivel)?1:0;}
+   return registro[nombre];
+ });
+ const bruto=MODELO.beta[0]+z.reduce((s,v,i)=>s+v*MODELO.beta[i+1],0);
+ if(!Number.isFinite(bruto))throw new Error('La magnitud de las entradas impide obtener una predicción finita.');
+ const horas=Math.max(0,bruto),estimado=registro['Estimated effort'],delta=horas-estimado,avisos=[];
+ for(const campo of ['Estimated effort','Object points'])if(registro[campo]>MODELO.rangos_observados[campo][1])avisos.push(campo+': superior al máximo observado; posible extrapolación.');
+ return {horas_persona_predichas:horas,discrepancia_firmada:delta,discrepancia_absoluta:Math.abs(delta),discrepancia_porcentual:estimado>0?100*Math.abs(delta)/estimado:null,avisos};
+}
+const form=document.getElementById('consulta'),salida=document.getElementById('resultado'),error=document.getElementById('error');
+const formato=x=>new Intl.NumberFormat('es-PE',{minimumFractionDigits:2,maximumFractionDigits:2}).format(x);
+form.addEventListener('submit',evento=>{
+ evento.preventDefault();salida.hidden=true;error.hidden=true;
+ try{
+  const r=predecir(Object.fromEntries(new FormData(form)));
+  salida.replaceChildren();
+  const h=document.createElement('h2');h.textContent='Predicción del esfuerzo real registrado';
+  const cifra=document.createElement('p');cifra.className='prediction';cifra.textContent=formato(r.horas_persona_predichas)+' horas-persona';
+  const dl=document.createElement('dl');
+  for(const [nombre,valor] of [['Discrepancia absoluta',formato(r.discrepancia_absoluta)+' horas-persona'],['Diferencia firmada (predicción − estimado)',formato(r.discrepancia_firmada)+' horas-persona'],['Discrepancia porcentual',r.discrepancia_porcentual===null?'No se calcula: estimado = 0':formato(r.discrepancia_porcentual)+' %']]){const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=nombre;dd.textContent=valor;dl.append(dt,dd);}
+  salida.append(h,cifra,dl);if(r.avisos.length){const aviso=document.createElement('p');aviso.textContent=r.avisos.join(' ');salida.append(aviso);}salida.hidden=false;
+ }catch(e){error.textContent=e.message;error.hidden=false;}
+});
+</script></html>
