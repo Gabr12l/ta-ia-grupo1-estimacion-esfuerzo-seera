@@ -9,13 +9,13 @@
     },
     {
       "ruta": "Grupo1-TA-Experimentos.ipynb",
-      "bytes": 287461,
-      "sha256": "8e920b058e730f0395a92b211ab1427a6678533bdbd6a67538fc1c8e36427dd5"
+      "bytes": 288351,
+      "sha256": "e73077aa4990a69a67f545ad88bd6a2e59e59039645325c60715609f0cbce5e7"
     },
     {
       "ruta": "README.md",
-      "bytes": 3679,
-      "sha256": "1614f7f74ca86a87780812078a086f5cef8e06588ecdda78603ce1d58ef08348"
+      "bytes": 4409,
+      "sha256": "762be84f2ed4da556a732acb9a3bd5fe3ac6847addb7b527d19a398a7ab6a7bd"
     },
     {
       "ruta": "data/docs/ReadMe.pdf",
@@ -44,8 +44,8 @@
     },
     {
       "ruta": "docs/EXPERIMENTO.md",
-      "bytes": 3679,
-      "sha256": "1614f7f74ca86a87780812078a086f5cef8e06588ecdda78603ce1d58ef08348"
+      "bytes": 4409,
+      "sha256": "762be84f2ed4da556a732acb9a3bd5fe3ac6847addb7b527d19a398a7ab6a7bd"
     },
     {
       "ruta": "docs/validacion_formulario.json",
@@ -217,5 +217,13 @@
       "bytes": 2965,
       "sha256": "78fad5992fde65431238b05a1df1554d1a586899843f4958ad23b3108235a846"
     }
-  ]
+  ],
+  "representaciones": {
+    "principal": 7,
+    "complementaria": 6,
+    "controles_auxiliares": [
+      3,
+      2
+    ]
+  }
 }
