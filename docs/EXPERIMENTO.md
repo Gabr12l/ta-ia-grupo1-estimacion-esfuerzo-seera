@@ -1,35 +1,31 @@
-# Descripción del experimento
+# Estimación de esfuerzo en proyectos de software
 
-## Datos y preparación
+Estudio del Grupo 1, Inteligencia Artificial 1INF24, 2026-2.
 
-El Excel SEERA 1.3 contiene una fila por proyecto y los encabezados en la segunda fila. `Actual effort` es el objetivo; `Organization id` agrupa reservas; `ProjID` sirve para trazabilidad y desempates, sin entrar al predictor.
+El objetivo es predecir Actual effort de SEERA en horas-persona. El escenario principal utiliza **siete atributos**: Development type, Application domain, Estimated effort, Object points, Product complexity, Programmers experience in programming language y Methodology. El complementario excluye solo Estimated effort y utiliza seis. Se comparan regresión lineal, árbol y KNN mediante cinco bloques externos y tres internos por organización.
 
-Se incorporaron Object points (pantallas más reportes), complejidad del producto, experiencia en el lenguaje y metodología. Hay seis celdas ausentes en cuatro proyectos; se conservan los 120. Tamaño se imputa con la mediana del entrenamiento; complejidad y experiencia, con la moda. Se agregan indicadores de ausencia. Tipo, dominio y metodología se codifican por indicadores; complejidad y experiencia usan puntuaciones ordinales, con la simplificación de intervalos uniformes declarada.
+## Consultar y reproducir
 
-KNN estandariza las entradas numéricas después de imputar usando estadísticas exclusivas del entrenamiento. Los indicadores permanecen en 0/1. Lineal y árbol conservan escala numérica original.
+1. Abre el cuaderno explicado y las tablas CSV para revisar el experimento.
+2. Abre `Grupo1-TA-Experimentos.ipynb`: contiene código, resultados y gráficos ejecutados. En Python 3.12 instala `requirements.txt`, selecciona el entorno en Jupyter o VS Code y ejecuta Restart Kernel → Run All.
+3. El Excel se encuentra en `data/raw` y su diccionario y fórmulas en `data/docs`.
+4. Ejecuta `python verificar_resultados.py` para comprobar particiones, métricas, ejecución del cuaderno y sensibilidad de los siete atributos.
+5. Abre `prototipo_local.html` para consultar el modelo guardado sin conexión. La discrepancia frente al esfuerzo estimado no es un error observado.
 
-## Modelos y rejillas
+En Windows: `py -3.12 -m venv .venv` y `.venv\Scripts\python.exe -m pip install -r requirements.txt`. En macOS/Linux: `python3 -m venv .venv` y `.venv/bin/python -m pip install -r requirements.txt`.
 
-- Lineal: mínimos cuadrados con intercepto y omisión de una categoría de referencia por atributo nominal.
-- Árbol: criterio cuadrático; profundidad 2, 3, 4, 5 o sin límite; mínimo por hoja 2, 5 o 10; semilla 2026.
-- KNN: distancia euclidiana; 3, 5, 7 o 9 vecinos; promedio uniforme o inverso a la distancia. Si un vecino seleccionado tiene distancia cero, solo se promedian los seleccionados de distancia cero. Empates de distancia: ProjID.
+## Resultados e interpretación
 
-Las predicciones se recortan a cero. La métrica de selección interna es MAE. En empate se prefiere menor profundidad y mayor mínimo por hoja; para KNN, mayor número de vecinos y luego peso uniforme.
+Con siete atributos, el lineal obtiene MAE 4292,72 horas-persona y no supera B1 (esfuerzo estimado: 4018,35). Sin esfuerzo estimado, el árbol obtiene MAE 7105,26 y no supera B2 (mediana del entrenamiento: 6915,29). La hipótesis del escenario principal no recibe respaldo descriptivo.
 
-## Evaluación
+Cada atributo se evalúa por permutación dentro de las reservas de las tres familias, con 30 repeticiones y semilla 2026. La preparación y el predictor se reutilizan sin ajustar. ΔMAE positivo indica deterioro al perturbar la columna; no mide causalidad ni aporte independiente. Las ausencias se permutan junto con su columna cruda. Esta prueba no selecciona variables ni parámetros.
 
-Se asignan organizaciones completas a cinco bloques externos. Cada reserva externa tiene 24 proyectos; el entrenamiento externo tiene 96. Los tres bloques internos separan 64 para ajustar y 32 para reservar. Todas las representaciones y familias comparten particiones. Cada proyecto recibe una predicción externa por procedimiento.
+La ejecución del informe es `ejecucion_20261112T210511101191Z`, identificada por `outputs/EJECUCION_DEL_INFORME.txt`. `metricas.csv` y `predicciones_externas.csv` respaldan la evaluación; `perfil_atributos.csv` caracteriza los siete campos; `sensibilidad_atributos.csv` y `sensibilidad_atributos_repeticiones.csv` conservan las 21 combinaciones atributo/modelo y las 630 mediciones. Las rejillas, particiones y auditoría permiten reproducir el protocolo. Los conjuntos reducidos de tres/dos entradas son controles auxiliares del cuaderno; no definen la hipótesis principal.
 
-Los errores se reúnen por proyecto antes de calcular MAE, RMSE y R². B1 devuelve el esfuerzo estimado; B2, la mediana del objetivo del entrenamiento externo. MAE y RMSE están en horas-persona. R² puede ser negativo y no es un porcentaje de acierto.
+## Alcance y fuente
 
-El modelo ampliado de menor MAE externo se reajusta con toda la muestra para la consulta local. Elegir la familia después de observar la comparación externa puede generar optimismo; el reajuste no es un conjunto de prueba nuevo.
+SEERA contiene 120 proyectos de 42 organizaciones sudanesas, recogidos en 2019–2020, con 76 columnas. La lista de siete atributos se justifica por su función conceptual y calidad de datos, sin optimalidad estadística demostrada. Los esfuerzos comparten componentes de cálculo y la disponibilidad temporal de las entradas no está certificada; la evidencia es retrospectiva y descriptiva. Se requiere validación independiente para uso operativo o transferencia geográfica.
 
-## Resultados y trazabilidad
+Datos: Mustafa y Osman (2020), SEERA 1.3, https://zenodo.org/records/4312777. Publicación: https://doi.org/10.1145/3416508.3417119. Se conserva la atribución de la fuente, sin asignar otra licencia a sus datos. ChatGPT asistió en redacción, código, ejecución y verificación; la responsabilidad académica corresponde al equipo.
 
-Consulte las tablas del README y los archivos `metricas.csv`, `metricas_por_bloque.csv`, `predicciones_externas.csv`, `configuraciones.json` y `errores_pareados_lineal7_B1.csv` de la ejecución identificada en `outputs/EJECUCION_DEL_INFORME.txt`.
-
-El lineal original conserva el menor MAE. Ampliar atributos mejora el escenario sin esfuerzo estimado, pero ninguno de seis entradas supera la mediana. Ninguno de siete supera el esfuerzo estimado. No se alteraron resultados para favorecer la hipótesis.
-
-## Formulario del diseño original
-
-`prototipo_local.html` concreta el formulario local previsto: cinco selectores y dos campos numéricos. Reutiliza el modelo ampliado guardado, funciona sin conexión y no reentrena. Su cálculo se contrastó con Python en 116 proyectos completos; la diferencia máxima fue menor que 10⁻⁶ horas-persona. La comprobación cubre cálculo, eventos y rechazo de entradas inválidas; no se realizó revisión visual en navegador. No cambia el protocolo ni los resultados del cuaderno.
+Repositorio experimental: https://github.com/Gabr12l/ta-ia-grupo1-estimacion-esfuerzo-seera.

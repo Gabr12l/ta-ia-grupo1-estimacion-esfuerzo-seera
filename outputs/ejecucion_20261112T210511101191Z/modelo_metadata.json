@@ -1,0 +1,16 @@
+{
+  "familia": "lineal",
+  "entradas": [
+    "Development type",
+    "Application domain",
+    "Estimated effort",
+    "Object points",
+    "Product complexity",
+    "Programmers experience in programming language",
+    "Methodology"
+  ],
+  "n_entrenamiento": 120,
+  "parametros": {},
+  "MAE_seleccion_interna_reajuste": 4520.580166998849,
+  "advertencia": "El MAE interno del reajuste no es una nueva prueba externa. La familia se eligió mirando resultados externos."
+}

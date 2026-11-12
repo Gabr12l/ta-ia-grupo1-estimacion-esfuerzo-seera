@@ -1,0 +1,18 @@
+{
+  "semilla": 2026,
+  "repeticiones": 30,
+  "bloques_externos": 5,
+  "proyectos": 120,
+  "columnas_crudas": [
+    "Development type",
+    "Application domain",
+    "Estimated effort",
+    "Object points",
+    "Product complexity",
+    "Programmers experience in programming language",
+    "Methodology"
+  ],
+  "seleccion_por_esta_prueba": false,
+  "interpretacion": "Dependencia descriptiva del predictor ante perturbaciones. No causalidad ni aporte independiente; permutar rompe asociaciones entre variables.",
+  "segundos": 2.5562808690001475
+}

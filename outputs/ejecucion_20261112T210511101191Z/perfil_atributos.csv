@@ -1,0 +1,8 @@
+atributo,tipo,observados,ausentes,valores_distintos,minimo_codigo_o_valor,maximo_codigo_o_valor,mediana_si_numerico,escenario_principal,escenario_complementario
+Development type,nominal,120,0,4,1.0,4.0,,True,True
+Application domain,nominal,120,0,6,1.0,7.0,,True,True
+Estimated effort,cuantitativo,120,0,66,176.0,50688.0,2860.0,True,False
+Object points,cuantitativo,118,2,84,7.0,1700.0,93.0,True,True
+Product complexity,ordinal,117,3,4,1.0,4.0,2.0,True,True
+Programmers experience in programming language,ordinal,119,1,5,1.0,5.0,2.0,True,True
+Methodology,nominal,120,0,6,1.0,7.0,,True,True

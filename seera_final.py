@@ -146,7 +146,7 @@ def metrics(y,p):
 
 def run(data,out=None):
     out=Path(out or ROOT/'outputs'); out.mkdir(exist_ok=True,parents=True)
-    # Se fija la ampliación antes de calcular resultados.
+    # Se definen los conjuntos de predictores antes de calcular resultados.
     (out/'seleccion_predefinida.json').write_text(json.dumps(SELECTION,ensure_ascii=False,indent=2))
     start=time.perf_counter(); outer,labels=blocks(data,5)
     data[[ID,ORG]].assign(bloque=labels+1).to_csv(out/'particiones_externas.csv',index=False)
@@ -194,7 +194,7 @@ def run(data,out=None):
         'dimension_nominal_bruta':7,'variables_finales_no_es_optimo_garantizado':True,
         'plataforma':platform.platform(),'procesador':platform.processor(),'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,'sklearn':sklearn.__version__,
         'segundos':time.perf_counter()-start,'errores':0,
-        'interpretacion':'Evaluación descriptiva retrospectiva. La ampliación fue fijada por contenido; no demuestra que sea el subconjunto óptimo ni utilidad temprana.'}
+        'interpretacion':'Evaluación descriptiva retrospectiva. El conjunto de siete atributos responde a criterios de contenido; no demuestra que sea el subconjunto óptimo ni utilidad temprana.'}
     (out/'auditoria.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2))
     return summary,pred,audit
 

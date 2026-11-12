@@ -36,7 +36,19 @@ code=[c for c in nb['cells'] if c['cell_type']=='code']
 assert all(c['execution_count'] is not None for c in code)
 assert not any(o.get('output_type')=='error' for c in code for o in c['outputs'])
 assert any('image/png' in o.get('data',{}) for c in code for o in c['outputs'])
-assert len(code)==15
+assert len(code)==16
 print('VERIFICADO: 120 proyectos; 42 organizaciones; bloques externos/internos íntegros.')
 print('VERIFICADO: 1680 predicciones; 14 métricas recalculadas; Excel y notebook ejecutado.')
 print('Ejecución del informe:',out.name)
+
+sens=pd.read_csv(out/'sensibilidad_atributos.csv')
+rep=pd.read_csv(out/'sensibilidad_atributos_repeticiones.csv')
+assert len(sens)==21 and len(rep)==630
+assert sens.groupby('modelo').atributo.nunique().eq(7).all()
+assert rep.groupby(['modelo','atributo']).size().eq(30).all()
+for row in sens.itertuples():
+    vals=rep[(rep.modelo==row.modelo)&(rep.atributo==row.atributo)]
+    assert np.isclose(vals.delta_MAE.mean(),row.delta_MAE_media)
+    expected=metrics[(metrics.entradas==7)&(metrics.modelo==row.modelo)].MAE.iloc[0]
+    assert np.isclose(row.MAE_base,expected)
+print('VERIFICADO: sensibilidad de siete atributos en tres familias; 30 repeticiones por combinación.')
