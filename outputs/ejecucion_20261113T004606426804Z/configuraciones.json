@@ -1,0 +1,2786 @@
+[
+  {
+    "bloque": 1,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 3718.298857224299,
+    "parametros": {},
+    "segundos": 0.006410899000002246,
+    "candidatos": [
+      {
+        "MAE_interno": 3718.298857224299,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5067.791666666667,
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707,
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4909.076020193714,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07787761600047816,
+    "candidatos": [
+      {
+        "MAE_interno": 5169.029958299132,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5410.580782474956,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5545.69853156272,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4909.076020193714,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5382.644372933201,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5383.904660555226,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5050.29656938044,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5403.027829447751,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5457.6061438948045,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5105.4211474867725,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5362.2933985543195,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5457.6061438948045,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5253.760416666667,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5371.080586557539,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5457.6061438948045,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5067.791666666667,
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707,
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5249.462349427252,
+    "parametros": {
+      "q": 5,
+      "weights": "distance"
+    },
+    "segundos": 0.04016661500008922,
+    "candidatos": [
+      {
+        "MAE_interno": 5411.598958333333,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5397.857663590768,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5320.092708333334,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5249.462349427252,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5491.299851190476,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5392.370247358917,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5384.93923611111,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5301.59167003504,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5067.791666666667,
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Estimated effort": 7130.401056562707,
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 7685.003934233471,
+    "parametros": {},
+    "segundos": 0.0045635409996975795,
+    "candidatos": [
+      {
+        "MAE_interno": 7685.003934233471,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 6942.951749602084,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 5
+    },
+    "segundos": 0.07432893999975931,
+    "candidatos": [
+      {
+        "MAE_interno": 6991.324714918018,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 6942.951749602084,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7147.280692716006,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7121.159816778275,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7181.987494164332,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7317.736554677961,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7717.21377004795,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7500.395753761574,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7331.730453487485,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8110.895429512617,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7562.3845195169415,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7331.730453487485,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8303.558159722223,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7571.328373015873,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7331.730453487485,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 1,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 6651.691076232154,
+    "parametros": {
+      "q": 5,
+      "weights": "distance"
+    },
+    "segundos": 0.04256524599986733,
+    "candidatos": [
+      {
+        "MAE_interno": 6924.232638888888,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6926.36516010208,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6714.319791666666,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6651.691076232154,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6876.219494047618,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6785.275447289702,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6834.233796296296,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6725.544537894869,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 88.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 199.03125,
+      "Product complexity": 2.0625,
+      "Programmers experience in programming language": 1.9479166666666667
+    },
+    "desviaciones": {
+      "Object points": 261.7210447660591,
+      "Product complexity": 0.9553849573165084,
+      "Programmers experience in programming language": 1.149001302460339
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4831.972322193314,
+    "parametros": {},
+    "segundos": 0.005457279999973252,
+    "candidatos": [
+      {
+        "MAE_interno": 4831.972322193314,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5376.822916666667,
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102,
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4934.165172238178,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07531035100055306,
+    "candidatos": [
+      {
+        "MAE_interno": 5510.11721893459,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5698.9548139404005,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5471.609155081314,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4934.165172238178,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5278.218905369943,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5263.4195451502355,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5540.703525351113,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5446.307895585318,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5386.896141473416,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5841.019570360196,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5720.028819444445,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5386.896141473416,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5611.355902777777,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5722.667245370371,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5386.896141473416,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5376.822916666667,
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102,
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 6162.182265974116,
+    "parametros": {
+      "q": 7,
+      "weights": "distance"
+    },
+    "segundos": 0.03917588300009811,
+    "candidatos": [
+      {
+        "MAE_interno": 6789.82638888889,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6643.41810256118,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6394.91875,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6334.633177006011,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6242.5245535714275,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6162.182265974116,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6264.480902777777,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6187.542856890806,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5376.822916666667,
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Estimated effort": 7088.278612427102,
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8554.093569427516,
+    "parametros": {},
+    "segundos": 0.004895114000646572,
+    "candidatos": [
+      {
+        "MAE_interno": 8554.093569427516,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 7483.5883363371,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07259672199961642,
+    "candidatos": [
+      {
+        "MAE_interno": 7483.5883363371,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7529.3454298150755,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 7874.735789354471,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7651.387959839057,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7795.2184306321915,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8354.776487608933,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9314.292544562852,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8114.980520006614,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8397.602008442265,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9850.973182870372,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8353.787787285053,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8397.602008442265,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9294.856770833334,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8471.67828207672,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8397.602008442265,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 2,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 8170.084490740741,
+    "parametros": {
+      "q": 9,
+      "weights": "uniform"
+    },
+    "segundos": 0.03701853300026414,
+    "candidatos": [
+      {
+        "MAE_interno": 9040.26215277778,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 9041.76557883797,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8754.487500000001,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8877.662661089218,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8541.761904761906,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8619.34299843127,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8170.084490740741,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8281.307735317976,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 99.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 196.5,
+      "Product complexity": 2.0729166666666665,
+      "Programmers experience in programming language": 2.125
+    },
+    "desviaciones": {
+      "Object points": 243.35502186449054,
+      "Product complexity": 0.9708758037920653,
+      "Programmers experience in programming language": 1.209769261746498
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        6
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 3764.259363121894,
+    "parametros": {},
+    "segundos": 0.005231314000411658,
+    "candidatos": [
+      {
+        "MAE_interno": 3764.259363121894,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5051.864583333333,
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207,
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 3207.2708894081466,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07365683900025033,
+    "candidatos": [
+      {
+        "MAE_interno": 3207.2708894081466,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4121.958389408146,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3838.710945430555,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3486.2294794140485,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3828.981190723572,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3605.977680569511,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3534.750795876577,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3876.041245039683,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3743.8546378968254,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3885.7502728174604,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3821.6597222222226,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 3885.7502728174604,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 3616.8066358835204,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5051.864583333333,
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207,
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 3825.0014510651204,
+    "parametros": {
+      "q": 5,
+      "weights": "distance"
+    },
+    "segundos": 0.039498022000771016,
+    "candidatos": [
+      {
+        "MAE_interno": 4122.765625,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4121.763062096296,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 3856.25625,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 3825.0014510651204,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 4127.2016369047615,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4072.645316056363,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 4193.679976851852,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 4132.934214844896,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5051.864583333333,
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Estimated effort": 5021.299254218207,
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8009.058459562068,
+    "parametros": {},
+    "segundos": 0.004984166999747686,
+    "candidatos": [
+      {
+        "MAE_interno": 8009.058459562068,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 6493.451140873017,
+    "parametros": {
+      "max_depth": 4,
+      "min_samples_leaf": 10
+    },
+    "segundos": 0.06903076699927624,
+    "candidatos": [
+      {
+        "MAE_interno": 7120.629846290652,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7085.614062691026,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6548.252534916351,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 6776.387083460521,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7079.455345060033,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6516.61946932898,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7145.337584579774,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7093.031020426333,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6493.451140873017,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7052.510317460317,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7140.3276207010595,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6493.451140873017,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7460.0109375,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 7141.885954034392,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 6493.451140873017,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 3,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 6149.07638888889,
+    "parametros": {
+      "q": 9,
+      "weights": "uniform"
+    },
+    "segundos": 0.03988122300052055,
+    "candidatos": [
+      {
+        "MAE_interno": 6951.159722222223,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7321.290966229208,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6618.035416666667,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7017.961129119838,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6352.344494047618,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6758.664726887949,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6149.07638888889,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6539.966104421498,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.5,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 189.01041666666666,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0
+    },
+    "desviaciones": {
+      "Object points": 196.7807708250302,
+      "Product complexity": 0.9166074791497903,
+      "Programmers experience in programming language": 1.118033988749895
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": [
+        7
+      ]
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4746.200001948159,
+    "parametros": {},
+    "segundos": 0.005346485999325523,
+    "candidatos": [
+      {
+        "MAE_interno": 4746.200001948159,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 21,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5193.03125,
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059,
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 4750.927989392957,
+    "parametros": {
+      "max_depth": 2,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07582010900023306,
+    "candidatos": [
+      {
+        "MAE_interno": 4750.927989392957,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5223.79640218676,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4865.197890967284,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4803.870350634631,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5018.2875960050005,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4769.145776196645,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5530.907781673736,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5025.019368212197,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4830.634889099871,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5489.838136574074,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5000.3635540674595,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4822.676555766538,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 5619.147569444445,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5100.009999173281,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 4822.676555766538,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5193.03125,
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059,
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5625.0223970080215,
+    "parametros": {
+      "q": 3,
+      "weights": "distance"
+    },
+    "segundos": 0.042534691000582825,
+    "candidatos": [
+      {
+        "MAE_interno": 5936.447916666667,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5625.0223970080215,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6305.566666666667,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5919.736846747073,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6391.196428571428,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 6019.36971429184,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 6317.01736111111,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5989.522553126721,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5193.03125,
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7350.024154514059,
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 8845.63026707618,
+    "parametros": {},
+    "segundos": 0.00468328900024062,
+    "candidatos": [
+      {
+        "MAE_interno": 8845.63026707618,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 7584.193971942409,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07170234199929837,
+    "candidatos": [
+      {
+        "MAE_interno": 7683.952366510464,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8660.367814377872,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9130.791573867047,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7584.193971942409,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8808.95030481951,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9413.165580320217,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8427.42722970875,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 9056.784417794895,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9478.933438001268,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 8210.738194444444,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8914.880999917328,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9478.933438001268,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 9494.940277777778,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8919.222821593916,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 9478.933438001268,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 4,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 8348.721284751633,
+    "parametros": {
+      "q": 9,
+      "weights": "distance"
+    },
+    "segundos": 0.04049020899947209,
+    "candidatos": [
+      {
+        "MAE_interno": 8826.774305555557,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8674.717912313225,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8621.089583333332,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8391.609541619086,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8548.735119047618,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8406.579925480999,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 8437.01273148148,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 8348.721284751633,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 89.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 200.6875,
+      "Product complexity": 2.15625,
+      "Programmers experience in programming language": 2.0416666666666665
+    },
+    "desviaciones": {
+      "Object points": 264.33384480693474,
+      "Product complexity": 0.9824302880272643,
+      "Programmers experience in programming language": 1.1807189429420628
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "lineal",
+    "MAE_interno": 4334.991447513655,
+    "parametros": {},
+    "segundos": 0.0051390569997238345,
+    "candidatos": [
+      {
+        "MAE_interno": 4334.991447513655,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 20,
+    "rango_lineal": 20,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5436.40625,
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422,
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "arbol",
+    "MAE_interno": 3963.9978868433614,
+    "parametros": {
+      "max_depth": 4,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.07392735199937306,
+    "candidatos": [
+      {
+        "MAE_interno": 5128.417719907407,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 5155.92683190275,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5418.576798115079,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4109.229720702126,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4780.654088261649,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5184.925132571145,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 3963.9978868433614,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4735.245734126984,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5178.646200980392,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4070.026686507937,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4739.7783662075935,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5178.646200980392,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 4215.902777777778,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 4759.031960978836,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 5178.646200980392,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5436.40625,
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422,
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 7,
+    "paquete": 7,
+    "con_e": true,
+    "modelo": "knn",
+    "MAE_interno": 5377.40301119012,
+    "parametros": {
+      "q": 9,
+      "weights": "distance"
+    },
+    "segundos": 0.03758569700039516,
+    "candidatos": [
+      {
+        "MAE_interno": 5750.918402777778,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5718.2935470186685,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5637.946874999999,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5529.631646207335,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5677.956101190477,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5536.912188790517,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 5479.476851851851,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 5377.40301119012,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 23,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Estimated effort": 5436.40625,
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Estimated effort": 7370.833880598422,
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "lineal",
+    "MAE_interno": 9081.782081358531,
+    "parametros": {},
+    "segundos": 0.004675627999858989,
+    "candidatos": [
+      {
+        "MAE_interno": 9081.782081358531,
+        "parametros": {}
+      }
+    ],
+    "columnas_transformadas": 19,
+    "rango_lineal": 19,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "arbol",
+    "MAE_interno": 6563.6633038749505,
+    "parametros": {
+      "max_depth": 3,
+      "min_samples_leaf": 2
+    },
+    "segundos": 0.06888137500027369,
+    "candidatos": [
+      {
+        "MAE_interno": 7034.117787575284,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8056.875525670523,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8052.937158913167,
+        "parametros": {
+          "max_depth": 2,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 6563.6633038749505,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8392.600724120826,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8080.672583816253,
+        "parametros": {
+          "max_depth": 3,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7504.373948109936,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8535.904870191784,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8243.862837619163,
+        "parametros": {
+          "max_depth": 4,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7500.588715277777,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8663.172631448413,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8243.862837619163,
+        "parametros": {
+          "max_depth": 5,
+          "min_samples_leaf": 10
+        }
+      },
+      {
+        "MAE_interno": 7503.403645833333,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 2
+        }
+      },
+      {
+        "MAE_interno": 8735.673053075398,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 5
+        }
+      },
+      {
+        "MAE_interno": 8243.862837619163,
+        "parametros": {
+          "max_depth": null,
+          "min_samples_leaf": 10
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  },
+  {
+    "bloque": 5,
+    "entradas": 6,
+    "paquete": 7,
+    "con_e": false,
+    "modelo": "knn",
+    "MAE_interno": 7114.73125,
+    "parametros": {
+      "q": 5,
+      "weights": "uniform"
+    },
+    "segundos": 0.036331539999991946,
+    "candidatos": [
+      {
+        "MAE_interno": 7636.597222222222,
+        "parametros": {
+          "q": 3,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7741.936160963368,
+        "parametros": {
+          "q": 3,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 7114.73125,
+        "parametros": {
+          "q": 5,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7146.703370979169,
+        "parametros": {
+          "q": 5,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 7401.895089285715,
+        "parametros": {
+          "q": 7,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7294.243511400723,
+        "parametros": {
+          "q": 7,
+          "weights": "distance"
+        }
+      },
+      {
+        "MAE_interno": 7280.5995370370365,
+        "parametros": {
+          "q": 9,
+          "weights": "uniform"
+        }
+      },
+      {
+        "MAE_interno": 7181.377250199471,
+        "parametros": {
+          "q": 9,
+          "weights": "distance"
+        }
+      }
+    ],
+    "columnas_transformadas": 22,
+    "rango_lineal": null,
+    "imputacion": {
+      "Object points": 125.0,
+      "Product complexity": 2.0,
+      "Programmers experience in programming language": 1.0
+    },
+    "medias": {
+      "Object points": 223.1875,
+      "Product complexity": 1.8854166666666667,
+      "Programmers experience in programming language": 2.0104166666666665
+    },
+    "desviaciones": {
+      "Object points": 265.8079786432617,
+      "Product complexity": 0.7755346498097655,
+      "Programmers experience in programming language": 1.0848847064959892
+    },
+    "categorias_validas_no_vistas": {
+      "Development type": [],
+      "Application domain": [],
+      "Methodology": []
+    }
+  }
+]

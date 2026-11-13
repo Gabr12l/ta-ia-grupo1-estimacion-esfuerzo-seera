@@ -1,4 +1,4 @@
-"""Experimento final reproducible de 3 y 7 entradas en SEERA 1.3.
+"""Estimación de esfuerzo en SEERA 1.3: escenario principal y análisis complementario.
 
 Selección por contenido y auditoría de entradas, no por correlaciones con y.
 No busca un subconjunto óptimo mirando las reservas externas.
@@ -22,8 +22,8 @@ SIZE, COMPLEXITY = 'Object points', 'Product complexity'
 EXPERIENCE = 'Programmers experience in programming language'
 SHA256 = 'e4d22e7e8f9f7e2452f8e97500082e3c1ec7c7c087a7ad70a191c3c5fe79f225'
 CODES = {TYPE: [1,2,3,4], DOMAIN: [1,2,3,5,6,7], METHOD: [1,2,3,4,6,7]}
-NEW = [SIZE, COMPLEXITY, EXPERIENCE, METHOD]
-FEATURES_7 = [TYPE, DOMAIN, E] + NEW
+CONTEXT_FEATURES = [SIZE, COMPLEXITY, EXPERIENCE, METHOD]
+FEATURES_7 = [TYPE, DOMAIN, E] + CONTEXT_FEATURES
 SELECTION = {
     'entradas_principal': FEATURES_7,
     'entradas_complementario': [c for c in FEATURES_7 if c != E],
@@ -76,9 +76,11 @@ def blocks(data,k):
 
 class Preparation:
     def fit(self,data,family,pack,with_e):
+        if pack != 7:
+            raise ValueError("El estudio utiliza siete atributos, o seis al excluir el esfuerzo estimado.")
         self.family,self.pack,self.with_e=family,pack,with_e
-        self.cat=[TYPE,DOMAIN]+([METHOD] if pack==7 else [])
-        self.newnum=[SIZE,COMPLEXITY,EXPERIENCE] if pack==7 else []
+        self.cat=[TYPE,DOMAIN,METHOD]
+        self.newnum=[SIZE,COMPLEXITY,EXPERIENCE]
         self.num=([E] if with_e else [])+self.newnum
         self.fill={}
         for c in self.newnum:
@@ -158,7 +160,7 @@ def run(data,out=None):
         for model,values in [('B1',test[E].to_numpy()),('B2',np.full(len(test),train[Y].median()))]:
             for j,p in enumerate(values):
                 preds.append(dict(ProjID=int(test.iloc[j][ID]),organizacion=int(test.iloc[j][ORG]),bloque=b,entradas=0,escenario='referencia',modelo=model,y=float(test.iloc[j][Y]),prediccion=float(p)))
-        for pack,with_e,family in product([3,7],[True,False],['lineal','arbol','knn']):
+        for pack,with_e,family in product([7],[True,False],['lineal','arbol','knn']):
             model_start=time.perf_counter()
             candidates=[]
             for params in GRIDS[family]:
@@ -190,7 +192,7 @@ def run(data,out=None):
     pd.concat(inner_records).to_csv(out/'particiones_internas.csv',index=False)
     (out/'configuraciones.json').write_text(json.dumps(logs,ensure_ascii=False,indent=2))
     audit={'filas':len(data),'organizaciones':int(data[ORG].nunique()),'sha256_fuente_publicada':SHA256,
-        'ausencias':{c:int(data[c].isna().sum()) for c in NEW},'proyectos_con_ausencias':int(data[NEW].isna().any(axis=1).sum()),
+        'ausencias':{c:int(data[c].isna().sum()) for c in CONTEXT_FEATURES},'proyectos_con_ausencias':int(data[CONTEXT_FEATURES].isna().any(axis=1).sum()),
         'dimension_nominal_bruta':7,'variables_finales_no_es_optimo_garantizado':True,
         'plataforma':platform.platform(),'procesador':platform.processor(),'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__,'sklearn':sklearn.__version__,
         'segundos':time.perf_counter()-start,'errores':0,
@@ -252,7 +254,7 @@ def select_and_refit(data, summary, out):
     score,params=min(candidates,key=lambda t:(t[0],tie(family,t[1])))
     payload=fit_saved(data,family,7,True,params)
     import joblib
-    joblib.dump(payload,Path(out)/'modelo_ampliado.joblib')
+    joblib.dump(payload,Path(out)/'modelo_final.joblib')
     meta={'familia':family,'entradas':FEATURES_7,'n_entrenamiento':len(data),
           'parametros':params,'MAE_seleccion_interna_reajuste':score,
           'advertencia':'El MAE interno del reajuste no es una nueva prueba externa. La familia se eligió mirando resultados externos.'}

@@ -1,33 +1,81 @@
 # Estimación de esfuerzo en proyectos de software
 
-Estudio del Grupo 1, Inteligencia Artificial 1INF24, 2026-2.
+**Grupo 1 · Inteligencia Artificial 1INF24 · 2026-2**
 
-El objetivo es predecir Actual effort de SEERA en horas-persona. El escenario principal utiliza **siete atributos**: Development type, Application domain, Estimated effort, Object points, Product complexity, Programmers experience in programming language y Methodology. El complementario excluye solo Estimated effort y utiliza seis. Se comparan regresión lineal, árbol y KNN mediante cinco bloques externos y tres internos por organización.
+Esta investigación compara regresión lineal, árbol y KNN para predecir el esfuerzo real registrado de proyectos de software, en horas-persona, mediante SEERA 1.3. El repositorio respalda el apartado experimental de **Grupo1-TA-Final.docx**, incluidas sus Tablas 5 y 6.
 
-## Consultar y reproducir
+El escenario principal utiliza **siete atributos**: tipo, dominio, esfuerzo estimado, tamaño, complejidad, experiencia en el lenguaje y metodología. La hipótesis y el prototipo corresponden a este escenario. El análisis complementario excluye únicamente el esfuerzo estimado y utiliza seis atributos, con los mismos proyectos y particiones, para examinar la dependencia de esa entrada. Ambos responden a una misma investigación.
 
-1. Abre el cuaderno explicado y las tablas CSV para revisar el experimento.
-2. Abre `Grupo1-TA-Experimentos.ipynb`: contiene código, resultados y gráficos ejecutados. En Python 3.12 instala `requirements.txt`, selecciona el entorno en Jupyter o VS Code y ejecuta Restart Kernel → Run All.
-3. El Excel se encuentra en `data/raw` y su diccionario y fórmulas en `data/docs`.
-4. Ejecuta `python verificar_resultados.py` para comprobar particiones, métricas, ejecución del cuaderno y sensibilidad de los siete atributos.
-5. Abre `prototipo_local.html` para consultar el modelo guardado sin conexión. La discrepancia frente al esfuerzo estimado no es un error observado.
+## Recorrido para revisar el trabajo
 
-En Windows: `py -3.12 -m venv .venv` y `.venv\Scripts\python.exe -m pip install -r requirements.txt`. En macOS/Linux: `python3 -m venv .venv` y `.venv/bin/python -m pip install -r requirements.txt`.
+| Material | Qué permite revisar |
+|---|---|
+| [Cuaderno ejecutado](Grupo1-TA-Experimentos.ipynb) | Lectura, auditoría, preparación, validación, resultados, sensibilidad, reajuste y consulta. |
+| [Documentación experimental](docs/EXPERIMENTO.md) | Definiciones de los siete atributos, algoritmos, particiones y correspondencia con el Word. |
+| [Tabla 5: métricas externas](outputs/ejecucion_20261113T004606426804Z/tabla5_metricas.csv) | Tres familias con siete atributos, tres con seis y referencias B1/B2. |
+| [Tabla 6: sensibilidad](outputs/ejecucion_20261113T004606426804Z/sensibilidad_atributos.csv) | Perturbación individual de los siete atributos en las tres familias. |
+| [Predicciones externas](outputs/ejecucion_20261113T004606426804Z/predicciones_externas.csv) | Los 960 registros que permiten recalcular las ocho filas de métricas. |
+| [Excel de SEERA](data/raw) y [documentos de la fuente](data/docs) | Dataset, códigos y fórmulas utilizados. |
+| [Prototipo local](prototipo_local.html) | Consulta del modelo lineal reajustado con siete atributos. Descarga el HTML y ábrelo en tu navegador. |
+
+## Cómo reproducir
+
+1. Descarga el repositorio mediante **Code → Download ZIP**, extrae la carpeta completa y abre una terminal en esa carpeta.
+2. Utiliza **Python 3.12** y crea un entorno con las dependencias de `requirements.txt`.
+
+Windows:
+
+```powershell
+py -3.12 -m venv .venv
+.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+macOS/Linux, con Python 3.12 instalado:
+
+```bash
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
+
+3. Abre `Grupo1-TA-Experimentos.ipynb` en VS Code con soporte para Python/Jupyter, o en una instalación de Jupyter. Selecciona el Python de `.venv` como kernel y ejecuta **Restart Kernel → Run All**. Mantén como directorio de trabajo la carpeta del repositorio.
+4. El cuaderno utiliza el Excel incluido en `data/raw`, comprueba su SHA-256 y genera una carpeta de resultados con identificador propio. `outputs/ULTIMA_EJECUCION.txt` señala la ejecución más reciente.
+5. Comprueba las salidas con el Python del mismo entorno:
+
+```bash
+python verificar_resultados.py --comparar-informe
+```
+
+El verificador recalcula las métricas, comprueba las referencias y la integridad de las particiones y contrasta la sensibilidad con el respaldo del Word. No vuelve a entrenar: para reproducir el entrenamiento se ejecuta el cuaderno. Si experimentas cambiando las rejillas, usa `python verificar_resultados.py` para comprobar tu ejecución; `--comparar-informe` exige además reproducir los resultados del documento.
 
 ## Resultados e interpretación
 
-Con siete atributos, el lineal obtiene MAE 4292,72 horas-persona y no supera B1 (esfuerzo estimado: 4018,35). Sin esfuerzo estimado, el árbol obtiene MAE 7105,26 y no supera B2 (mediana del entrenamiento: 6915,29). La hipótesis del escenario principal no recibe respaldo descriptivo.
+| Procedimiento | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| Siete atributos · Lineal | 4292,72 | 6848,25 | 0,702 |
+| Siete atributos · Árbol | 4347,27 | 7572,35 | 0,636 |
+| Siete atributos · KNN | 5166,63 | 9229,34 | 0,459 |
+| Seis atributos · Lineal | 8196,04 | 11974,14 | 0,089 |
+| Seis atributos · Árbol | 7105,26 | 11962,94 | 0,091 |
+| Seis atributos · KNN | 7226,49 | 11725,15 | 0,127 |
+| B1 · Esfuerzo estimado | 4018,35 | 7815,75 | 0,612 |
+| B2 · Mediana del entrenamiento | 6915,29 | 13261,89 | −0,117 |
 
-Los controles reducidos utilizan tipo y dominio, con esfuerzo estimado (tres entradas) o sin él (dos). Se evalúan con las mismas reservas y rejillas, reajustando cada representación. `comparacion_conjuntos.csv` conserva la comparación: sin esfuerzo estimado, el conjunto completo reduce el MAE en 4,38 % (lineal), 8,98 % (árbol) y 25,67 % (KNN); con esfuerzo estimado, solo árbol mejora (1,03 %). El control lineal de tres entradas obtiene MAE 3345,04, inferior a B1 en 16,76 %. Este resultado auxiliar no respalda la hipótesis definida para siete entradas ni cambia la familia y representación del prototipo. El contraste conjunto no atribuye el efecto individual de tamaño, complejidad, experiencia y metodología.
+MAE y RMSE se expresan en horas-persona. Los CSV conservan la precisión numérica de la ejecución; esta tabla muestra el redondeo del informe.
 
-Cada atributo se evalúa por permutación dentro de las reservas de las tres familias, con 30 repeticiones y semilla 2026. La preparación y el predictor se reutilizan sin ajustar. ΔMAE positivo indica deterioro al perturbar la columna; no mide causalidad ni aporte independiente. Las ausencias se permutan junto con su columna cruda. Esta prueba no selecciona variables ni parámetros.
+**Ninguna familia con siete atributos supera B1 en MAE.** El lineal presenta el menor MAE entre esas familias, pero su error es 6,83 % mayor que el de la referencia. La hipótesis no recibe respaldo descriptivo. Con seis atributos, el árbol tiene menor MAE entre los modelos y tampoco supera B2.
 
-La ejecución del informe es `ejecucion_20261112T210511101191Z`, identificada por `outputs/EJECUCION_DEL_INFORME.txt`. `metricas.csv` y `predicciones_externas.csv` respaldan la evaluación; `perfil_atributos.csv` caracteriza los siete campos; `sensibilidad_atributos.csv` y `sensibilidad_atributos_repeticiones.csv` conservan las 21 combinaciones atributo/modelo y las 630 mediciones. Las rejillas, particiones y auditoría permiten reproducir el protocolo. Los conjuntos reducidos se definen y analizan en el informe como controles auxiliares; no definen la hipótesis principal.
+Un MAE de 4292,72 expresa el promedio de la magnitud del error sobre los proyectos evaluados; no equivale a un porcentaje de error ni determina el error de cada consulta. R² tampoco representa porcentaje de acierto. Los resultados permiten comparar procedimientos, pero no acreditan una mejora operativa respecto de la estimación registrada.
 
-## Alcance y fuente
+La sensibilidad permuta cada columna cruda, incluidas sus ausencias, dentro de las reservas externas: 30 repeticiones, semilla 2026 y 21 combinaciones atributo/familia. No selecciona variables ni modelos y no establece causalidad o aporte independiente.
 
-SEERA contiene 120 proyectos de 42 organizaciones sudanesas, recogidos en 2019–2020, con 76 columnas. La lista de siete atributos se justifica por su función conceptual y calidad de datos, sin optimalidad estadística demostrada. Los esfuerzos comparten componentes de cálculo y la disponibilidad temporal de las entradas no está certificada; la evidencia es retrospectiva y descriptiva. Se requiere validación independiente para uso operativo o transferencia geográfica.
+## Fuente, alcance y trazabilidad
 
-Datos: Mustafa y Osman (2020), SEERA 1.3, https://zenodo.org/records/4312777. Publicación: https://doi.org/10.1145/3416508.3417119. Se conserva la atribución de la fuente, sin asignar otra licencia a sus datos. ChatGPT asistió en redacción, código, ejecución y verificación; la responsabilidad académica corresponde al equipo.
+SEERA contiene **120 proyectos de 42 organizaciones sudanesas y 76 columnas**, recogidos en 2019–2020. Cada fila es un proyecto. `Actual effort` es exclusivamente el objetivo; `Organization id` agrupa y `ProjID` permite trazabilidad y desempates de vecinos. Ninguno de estos tres campos es predictor.
 
-Repositorio experimental: https://github.com/Gabr12l/ta-ia-grupo1-estimacion-esfuerzo-seera.
+La selección de atributos cubre naturaleza, contexto, estimación, volumen, dificultad, experiencia técnica y proceso. No se demuestra que sea un conjunto estadísticamente óptimo ni que cada atributo mejore todos los modelos. El estudio es retrospectivo: la disponibilidad previa no está certificada y los esfuerzos estimado y real comparten componentes de cálculo. La reserva de organizaciones no valida cronología ni transferencia a otros países.
+
+`outputs/EJECUCION_DEL_INFORME.txt` identifica el respaldo de las cifras y los tiempos citados en el Word. La ejecución activa reproduce las ocho filas reportadas y la sensibilidad. [La guía de salidas](outputs/README.md) explica cómo distinguir ambos registros y consultar los archivos históricos.
+
+Datos: Mustafa y Osman (2020), [SEERA 1.3](https://zenodo.org/records/4312777). Publicación: https://doi.org/10.1145/3416508.3417119. Se conserva la atribución de la fuente sin asignar otra licencia a sus datos.
+
+ChatGPT asistió en redacción, código, ejecución y verificación. La responsabilidad académica corresponde al equipo. La validación del formulario comprueba cálculo y eventos mediante Node VM; no incluye una revisión visual en navegador.

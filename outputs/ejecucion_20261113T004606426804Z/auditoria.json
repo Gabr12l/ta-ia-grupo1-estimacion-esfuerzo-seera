@@ -1,0 +1,25 @@
+{
+  "filas": 120,
+  "organizaciones": 42,
+  "sha256_fuente_publicada": "e4d22e7e8f9f7e2452f8e97500082e3c1ec7c7c087a7ad70a191c3c5fe79f225",
+  "ausencias": {
+    "Object points": 2,
+    "Product complexity": 3,
+    "Programmers experience in programming language": 1,
+    "Methodology": 0
+  },
+  "proyectos_con_ausencias": 4,
+  "dimension_nominal_bruta": 7,
+  "variables_finales_no_es_optimo_garantizado": true,
+  "plataforma": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "procesador": "",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "sklearn": "1.8.0",
+  "segundos": 1.2393358720000833,
+  "errores": 0,
+  "interpretacion": "Evaluación descriptiva retrospectiva. El conjunto de siete atributos responde a criterios de contenido; no demuestra que sea el subconjunto óptimo ni utilidad temprana.",
+  "sha256_excel_ejecutado": "e4d22e7e8f9f7e2452f8e97500082e3c1ec7c7c087a7ad70a191c3c5fe79f225",
+  "fuente_exacta_del_informe": true
+}

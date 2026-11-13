@@ -1,0 +1,18 @@
+{
+  "entradas": {
+    "tipo": 1,
+    "dominio": 1,
+    "esfuerzo_estimado": 6000,
+    "object_points": 80,
+    "complejidad": 2,
+    "experiencia_lenguaje": 2,
+    "metodologia": 2
+  },
+  "salida": {
+    "horas_persona_predichas": 3979.591184172642,
+    "diferencia_firmada_frente_a_e": -2020.408815827358,
+    "discrepancia_absoluta_frente_a_e": 2020.408815827358,
+    "discrepancia_porcentual_frente_a_e": 33.6734802637893,
+    "avisos": []
+  }
+}

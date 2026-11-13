@@ -1,0 +1,29 @@
+{
+  "entradas_principal": [
+    "Development type",
+    "Application domain",
+    "Estimated effort",
+    "Object points",
+    "Product complexity",
+    "Programmers experience in programming language",
+    "Methodology"
+  ],
+  "entradas_complementario": [
+    "Development type",
+    "Application domain",
+    "Object points",
+    "Product complexity",
+    "Programmers experience in programming language",
+    "Methodology"
+  ],
+  "criterio": "Cobertura de tamaño, dificultad, experiencia técnica y proceso; verificación del diccionario y ausencias. No selección por y.",
+  "no_optimo_estadistico_demostrado": true,
+  "codificacion_ordinal": {
+    "Product complexity": "1 a 4, dificultad creciente",
+    "Programmers experience in programming language": "1 a 5, experiencia decreciente; códigos, no años"
+  },
+  "limitacion_ordinal": "Se usan puntuaciones ordinales; la separación uniforme entre niveles es un supuesto, no una medida física. Evaluar codificación nominal como sensibilidad futura.",
+  "K": 5,
+  "K_interno": 3,
+  "semilla_arbol": 2026
+}

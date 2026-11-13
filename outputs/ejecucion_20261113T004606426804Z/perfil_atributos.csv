@@ -1,0 +1,8 @@
+atributo,ausentes,porcentaje_ausente,valores_distintos_observados,tipo,unidad_o_escala,escenario
+Development type,0,0.0,4,nominal,código nominal,principal y complementario
+Application domain,0,0.0,6,nominal,código nominal,principal y complementario
+Estimated effort,0,0.0,66,cuantitativo,horas-persona,principal; referencia B1
+Object points,2,1.6666666666666667,84,cuantitativo,pantallas + reportes,principal y complementario
+Product complexity,3,2.5,4,ordinal,código 1–4,principal y complementario
+Programmers experience in programming language,1,0.8333333333333334,5,ordinal,código 1–5; experiencia decreciente,principal y complementario
+Methodology,0,0.0,6,nominal,código nominal,principal y complementario
